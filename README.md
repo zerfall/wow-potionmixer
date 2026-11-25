@@ -17,7 +17,7 @@ A WoW Forever (client 1.60.1) addon that adds four buttons in two pairs: **heali
 ## Install
 
 1. Find the folder where your other WoW Forever addons live: `<WoW Forever install>/<flavor folder>/Interface/AddOns/`. The name of the flavor folder (something like `_forever_`) isn't confirmed. Use the one whose `Interface/AddOns` already holds your Forever addons, for example Auctionator.
-2. Unzip a release into it (from GitHub Releases, CurseForge, Wago or WoWInterface), or copy the `PotionMixer` folder from this repository there. Either way you should end up with `.../Interface/AddOns/PotionMixer/PotionMixer.toc`. When updating, replace the whole folder.
+2. Unzip a release into it (from GitHub Releases, CurseForge or Wago), or copy the `PotionMixer` folder from this repository there. Either way you should end up with `.../Interface/AddOns/PotionMixer/PotionMixer.toc`. When updating, replace the whole folder.
 3. Start the game, or type `/reload` if it's running, and check that **Potion Mixer** is enabled in the AddOns list on the character screen, where it shows its flask logo.
 
 When an update adds new files to the addon folder, restart the game instead of using `/reload`: WoW only picks up new files at startup.
@@ -159,17 +159,16 @@ GitHub Actions builds and uploads releases with [BigWigsMods/packager](https://g
 
 - **Every push and pull request** runs the syntax checks and the test harness.
 - **Pushing a tag** also packages the `PotionMixer` folder into a zip, versioned from the tag, with a changelog of the commits since the previous tag. That release step runs only after the tests pass.
-- **Where it goes:** the zip is uploaded to GitHub Releases, and to CurseForge, Wago and WoWInterface once they're set up as below.
+- **Where it goes:** the zip is uploaded to GitHub Releases, and to CurseForge and Wago once they're set up as below. WoWInterface has no WoW Forever category, so the packager can't upload there.
 - **Game version:** the packager reads interface 16001 from the `.toc` and files each release under WoW Forever (game version 1.60.1).
 
 One-time setup:
 
 1. Push this repository to GitHub.
-2. Create the addon's project on each site you want to use: CurseForge, Wago and/or WoWInterface. Then put the project IDs into `PotionMixer/PotionMixer.toc`: remove the leading `# ` from the `X-Curse-Project-ID`, `X-Wago-ID` and `X-WoWI-ID` lines and fill in the IDs.
+2. Create the addon's project on CurseForge and/or Wago. Then put the project IDs into `PotionMixer/PotionMixer.toc`, as `## X-Curse-Project-ID: …` and `## X-Wago-ID: …`.
    - CurseForge shows the ID in the "About Project" box.
    - Wago shows it on its developer dashboard.
-   - WoWInterface has it in the addon's URL (`info12345-…`).
-3. Add each site's API token as a repository secret, under Settings → Secrets and variables → Actions: `CF_API_TOKEN` (CurseForge), `WAGO_API_TOKEN` (Wago) and `WOWI_API_TOKEN` (WoWInterface). GitHub's own token is provided automatically.
+3. Add each site's API token as a repository secret, under Settings → Secrets and variables → Actions: `CF_API_TOKEN` (CurseForge) and `WAGO_API_TOKEN` (Wago). GitHub's own token is provided automatically.
 
 A site without its project ID or token is skipped, so you can start with GitHub Releases alone.
 

@@ -8,10 +8,8 @@
 ## Notes-esMX: Botones que siempre usan tu mejor poción de sanación, poción de maná, comida y bebida.
 ## IconTexture: Interface\AddOns\PotionMixer\Media\Logo
 ## Version: @project-version@
-# Project IDs for the release pipeline: fill in and remove the leading "# ".
 ## X-Curse-Project-ID: 1830713
 ## X-Wago-ID: kNMPl3Gz
-# ## X-WoWI-ID: 00000
 ## SavedVariables: PotionMixerDB
 
 Locales.lua

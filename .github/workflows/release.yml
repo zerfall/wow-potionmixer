@@ -2,9 +2,9 @@ name: Test and release
 
 # Every push and pull request runs the syntax checks and the test harness.
 # Pushing a tag (for example 1.3.0) also packages the addon with
-# BigWigsMods/packager and uploads it to GitHub Releases, plus CurseForge,
-# Wago and WoWInterface wherever the .toc has the site's project ID and the
-# repository has the site's token as a secret. See "Releasing" in README.md.
+# BigWigsMods/packager and uploads it to GitHub Releases, plus CurseForge and
+# Wago wherever the .toc has the site's project ID and the repository has the
+# site's token as a secret. See "Releasing" in README.md.
 on:
   push:
     branches: ["**"]
@@ -43,7 +43,6 @@ jobs:
     env:
       CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
-      WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
       GH_API_TOKEN: ${{ secrets.GITHUB_TOKEN }} # provided by GitHub, no secret to add
     steps:
       - uses: actions/checkout@v7
