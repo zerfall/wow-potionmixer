@@ -1,0 +1,15 @@
+# BigWigsMods/packager settings (used by .github/workflows/release.yml).
+
+package-as: PotionMixer
+
+# The addon lives in the PotionMixer folder of this repository. The packager
+# copies the whole repository into PotionMixer/, so this lifts the addon's
+# own folder up to the top of the zip.
+move-folders:
+  PotionMixer/PotionMixer: PotionMixer
+
+# Repository files that aren't part of the addon.
+ignore:
+  - tests
+  - logos
+  - README.md

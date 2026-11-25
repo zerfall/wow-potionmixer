@@ -1,0 +1,21 @@
+# 16001 = WoW Forever 1.60.1, taken from Auctionator's .toc; confirm with /dump select(4, GetBuildInfo())
+## Interface: 16001
+## Title: Potion Mixer
+## Notes: Buttons that always use your best healing potion, mana potion, food and drink.
+## Notes-deDE: Buttons, die immer Euren besten Heiltrank, Manatrank, Euer bestes Essen und Getränk benutzen.
+## Notes-frFR: Des boutons qui utilisent toujours votre meilleure potion de soins, potion de mana, nourriture et boisson.
+## Notes-esES: Botones que siempre usan tu mejor poción de curación, poción de maná, comida y bebida.
+## Notes-esMX: Botones que siempre usan tu mejor poción de sanación, poción de maná, comida y bebida.
+## IconTexture: Interface\AddOns\PotionMixer\Media\Logo
+## Version: @project-version@
+# Project IDs for the release pipeline: fill in and remove the leading "# ".
+# ## X-Curse-Project-ID: 000000
+# ## X-Wago-ID: xxxxxxxx
+# ## X-WoWI-ID: 00000
+## SavedVariables: PotionMixerDB
+
+Locales.lua
+Data.lua
+Potions.lua
+Buttons.lua
+Core.lua

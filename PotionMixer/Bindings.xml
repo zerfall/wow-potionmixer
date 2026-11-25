@@ -1,0 +1,7 @@
+<Bindings>
+	<!-- No default keys: the player binds them under Key Bindings > AddOns > Potion Mixer. -->
+	<Binding name="CLICK PotionMixerHealingButton:LeftButton" header="POTIONMIXER" category="ADDONS"/>
+	<Binding name="CLICK PotionMixerManaButton:LeftButton" category="ADDONS"/>
+	<Binding name="CLICK PotionMixerFoodButton:LeftButton" category="ADDONS"/>
+	<Binding name="CLICK PotionMixerDrinkButton:LeftButton" category="ADDONS"/>
+</Bindings>

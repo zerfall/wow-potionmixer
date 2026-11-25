@@ -1,0 +1,27 @@
+GIMP Palette
+Name: Potion Mixer
+Columns: 8
+#
+ 20  14  28	ink
+226 178  96	frame_hi
+168 116  58	frame
+106  66  31	frame_lo
+ 43  38  73	bg_top
+ 35  31  61	bg_mid
+ 27  24  48	bg_low
+ 53  48  99	glow
+238 248 252	glass_hi
+169 199 216	glass
+111 142 166	glass_lo
+255 125 102	red_hi
+224  58  58	red
+153  29  46	red_lo
+111 194 255	blue_hi
+ 47 114 230	blue
+ 28  60 154	blue_lo
+212 148 255	purple_hi
+162  78 224	purple
+227 176 119	cork_hi
+176 122  68	cork
+119  75  38	cork_lo
+253 250 241	white
