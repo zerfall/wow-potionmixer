@@ -5,6 +5,7 @@ One flask, half healing red and half mana blue, meeting in a purple seam, on a
 bronze-framed violet tile. Drawn on a 32x32 grid and written as:
 
     logos/potion-mixer-logo-32.png        the pixel art itself
+    logos/potion-mixer-logo-400.png       CurseForge's project avatar (must be 400x400)
     logos/potion-mixer-logo-512.png       for the addon websites
     logos/potion-mixer-logo-1024.png
     logos/potion-mixer-logo.aseprite      layers "Frame" and "Art" (when Aseprite is installed)
@@ -205,6 +206,12 @@ def main():
     logo = split_flask()
     for scale, suffix in ((1, "32"), (16, "512"), (32, "1024")):
         logo.image(scale).save(os.path.join(OUT_DIR, f"potion-mixer-logo-{suffix}.png"))
+
+    # CurseForge wants exactly 400x400. 400 isn't a multiple of 32, so scale by 12 (384)
+    # to keep every pixel the same size, and centre it on a transparent 400x400 canvas.
+    avatar = Image.new("RGBA", (400, 400), (0, 0, 0, 0))
+    avatar.paste(logo.image(12), (8, 8))
+    avatar.save(os.path.join(OUT_DIR, "potion-mixer-logo-400.png"))
 
     # In-game icon: uncompressed 32-bit TGA, power-of-two size.
     os.makedirs(ADDON_MEDIA, exist_ok=True)

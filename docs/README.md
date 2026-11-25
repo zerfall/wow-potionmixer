@@ -6,3 +6,4 @@ The [main README](../README.md) is written for players. These pages are for work
 - [Development](development.md): the repository layout, running the addon from the repository, the test harness and the logo.
 - [In-game test checklist](in-game-tests.md): what to check on a real WoW Forever client.
 - [Releasing](releasing.md): the GitHub Actions pipeline that uploads to CurseForge, Wago and GitHub Releases.
+- [Project pages](listing/README.md): the summaries, description and images for the CurseForge and Wago pages.
