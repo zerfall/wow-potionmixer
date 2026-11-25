@@ -9,8 +9,8 @@
 ## IconTexture: Interface\AddOns\PotionMixer\Media\Logo
 ## Version: @project-version@
 # Project IDs for the release pipeline: fill in and remove the leading "# ".
-# ## X-Curse-Project-ID: 000000
-# ## X-Wago-ID: xxxxxxxx
+## X-Curse-Project-ID: 1830713
+## X-Wago-ID: kNMPl3Gz
 # ## X-WoWI-ID: 00000
 ## SavedVariables: PotionMixerDB
 

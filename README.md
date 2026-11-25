@@ -183,3 +183,9 @@ git push origin 1.3.0
 A tag containing `beta` or `alpha`, such as `1.4.0-beta1`, is uploaded as a beta or alpha release. If creating the GitHub release fails with "Resource not accessible by integration", allow read and write permissions for workflows under Settings → Actions → General.
 
 The `.toc` says `## Version: @project-version@`, and the packager replaces that with the tag. A copy taken straight from the repository shows the placeholder as its version in the game.
+
+## License
+
+Copyright (C) 2026 zerfall
+
+Potion Mixer is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See [LICENSE](LICENSE) for the full text.
