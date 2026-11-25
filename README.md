@@ -54,10 +54,11 @@ The healing button is on the left and the mana button on the right; food is on t
 
 ## Found a problem?
 
-If an item isn't picked up, or shows the wrong amount:
+[Report a bug on GitHub](https://github.com/zerfall/wow-potionmixer/issues/new?template=bug_report.yml). The form asks for your Potion Mixer version, your client language and what happened.
 
-1. Type `/pmix tooltip` followed by a space, then Shift-click the item in your bags to insert its link, and press Enter.
-2. [Open an issue on GitHub](https://github.com/zerfall/wow-potionmixer/issues) with what you expected, your client language, and the lines that `/pmix tooltip` printed.
+If an item isn't picked up, or shows the wrong amount, the form also asks for a screenshot of `/pmix tooltip` for that item: type `/pmix tooltip` and a space, Shift-click the item in your bags to insert its link, and press Enter.
+
+Ideas are welcome too: [suggest a feature](https://github.com/zerfall/wow-potionmixer/issues/new?template=feature_request.yml).
 
 ## License
 

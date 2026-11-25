@@ -1,0 +1,97 @@
+name: Bug report
+description: A button picks the wrong item, misses an item, shows something wrong, or you get a Lua error.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! A few details about your game help a lot.
+
+        WoW's chat can't be copied, so for the chat output below a screenshot is perfect: drag it into the box, or paste it with Ctrl+V.
+
+  - type: input
+    id: version
+    attributes:
+      label: Potion Mixer version
+      description: Shown in your addon manager, or in the name of the zip you downloaded (for example `PotionMixer-1.0.0-forever.zip`).
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Game client language
+      options:
+        - English
+        - German (Deutsch)
+        - French (Français)
+        - Spanish, Europe (Español EU)
+        - Spanish, Latin America (Español AL)
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: buttons
+    attributes:
+      label: Which buttons are affected?
+      multiple: true
+      options:
+        - Healing potion
+        - Mana potion
+        - Food
+        - Drink
+        - All of them, or not about a specific button
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: For example "The healing button uses Healing Potion, but I also carry a Greater Healing Potion."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be reproduced?
+      description: What you did before it happened, for example "Logged in, clicked the food button in combat, left combat."
+      placeholder: |
+        1.
+        2.
+        3.
+
+  - type: textarea
+    id: tooltip-output
+    attributes:
+      label: "/pmix tooltip output"
+      description: |
+        If the problem is about a specific item: type `/pmix tooltip` and a space, Shift-click the item in your bags to insert its link, and press Enter. Add a screenshot of what it prints in the chat.
+
+  - type: textarea
+    id: list-output
+    attributes:
+      label: "/pmix list output"
+      description: Type `/pmix list` and add a screenshot of what it prints in the chat.
+
+  - type: textarea
+    id: lua-error
+    attributes:
+      label: Lua error
+      description: |
+        If you got an error: type `/console scriptErrors 1` so errors are shown, make the problem happen again, and copy the text from the error window (or add a screenshot).
+
+  - type: textarea
+    id: other-addons
+    attributes:
+      label: Other addons
+      description: Addons that change action bars, bags or tooltips are the most interesting ones here.
