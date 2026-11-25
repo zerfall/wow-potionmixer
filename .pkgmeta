@@ -13,3 +13,4 @@ ignore:
   - tests
   - logos
   - README.md
+  - docs

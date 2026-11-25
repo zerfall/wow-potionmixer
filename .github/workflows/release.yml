@@ -4,7 +4,7 @@ name: Test and release
 # Pushing a tag (for example 1.3.0) also packages the addon with
 # BigWigsMods/packager and uploads it to GitHub Releases, plus CurseForge and
 # Wago wherever the .toc has the site's project ID and the repository has the
-# site's token as a secret. See "Releasing" in README.md.
+# site's token as a secret. See docs/releasing.md.
 on:
   push:
     branches: ["**"]
